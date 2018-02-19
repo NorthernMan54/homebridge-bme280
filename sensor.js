@@ -28,6 +28,7 @@ class BME280Plugin {
     this.name_humidity = config.name_humidity || this.name;
     this.refresh = config['refresh'] || 60; // Update every minute
     this.options = config.options || {};
+    this.storage = config['storage'] || "fs";
     this.spreadsheetId = config['spreadsheetId'];
     if (this.spreadsheetId) {
       this.log_event_counter = 59;
@@ -83,7 +84,10 @@ class BME280Plugin {
     setInterval(this.devicePolling.bind(this), this.refresh * 1000);
 
     this.temperatureService.log = this.log;
-    this.loggingService = new FakeGatoHistoryService("weather", this.temperatureService);
+    this.loggingService = new FakeGatoHistoryService("weather", this.temperatureService,{
+          storage: this.storage,
+          minutes: this.refresh * 10 / 60
+        });
 
   }
 
