@@ -61,7 +61,7 @@ class BME280Plugin {
     this.informationService = new Service.AccessoryInformation();
 
     this.informationService
-      .setCharacteristic(Characteristic.Manufacturer, "Bosch")
+      .setCharacteristic(Characteristic.Manufacturer, "bme280")
       .setCharacteristic(Characteristic.Model, "RPI-BME280")
       .setCharacteristic(Characteristic.SerialNumber, hostname + "-" + hostname)
       .setCharacteristic(Characteristic.FirmwareRevision, require('./package.json').version);
