@@ -1,6 +1,5 @@
 # homebridge-bme280
 
-
 [![NPM Downloads](https://img.shields.io/npm/dm/homebridge-bme280.svg?style=flat)](https://npmjs.org/package/homebridge-bme280)
 
 [Bosch BME280](https://www.bosch-sensortec.com/bst/products/all_products/bme280)
