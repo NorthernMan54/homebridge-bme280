@@ -104,6 +104,7 @@ e. Copy the code you're given, paste it into the command-line prompt, and press 
 * [homebridge-dht](https://www.npmjs.com/package/homebridge-dht)
 
 ## Credits
+* RXSeger - Author and creator of the plugin
 * NorthernMan54 - Barometric Pressure and Device Polling
 * simont77 - History Service
 
