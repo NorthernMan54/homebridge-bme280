@@ -30,10 +30,10 @@
   },
   "homepage": "https://github.com/NorthernMan54/homebridge-bme280#readme",
   "dependencies": {
-    "bme280-sensor": "^0.0.8",
-    "debug": "^2.2.0",
-    "mcuiot-logger": "^0.0.7",
-    "moment": "^2.18.1",
-    "fakegato-history": "^0.4.0"
+    "bme280-sensor": ">0.0.8",
+    "debug": ">2.2.0",
+    "mcuiot-logger": ">0.0.7",
+    "moment": ">2.18.1",
+    "fakegato-history": ">0.4.0"
   }
 }
